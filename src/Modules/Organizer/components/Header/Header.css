@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+.common-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.common-header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+.common-header h3 {
+    font-weight: normal;
+    color: white;
+    font-size: 25px;
+}
+
+.common-container .common-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    color: white;
+    width: 15%;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.common-profile img {
+    border-radius: 50%;
+    width: 15%;
+}
+
+.back-page {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.common-bar-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.common-dropdown-nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 0;
+    top: 40px;
+    width: 185px;
+    background: black;
+    overflow: hidden;
+
+}
+
+.common-dropdown-nav.open {
+    display: none;
+    height: max-content;
+}
+
+.common-dropdown-nav li {
+    list-style: none;
+    display: flex;
+    padding: 12px;
+    color: white;
+    align-items: flex-start;
+    cursor: pointer;
+
+}
+
+.close {
+    display: none;
+}
+
+
+@media(max-width: 768px) {
+    .common-header {
+        padding: 10px;
+    }
+
+    .common-container .common-profile {
+        display: none;
+    }
+
+    .common-profile img {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .common-bar-icon {
+        position: absolute;
+        left: 92%;
+        display: block;
+    }
+
+    .common-dropdown-nav.open {
+        display: block;
+    }
+
+    .common-dropdown-nav.open li:hover {
+        color: rgb(255, 196, 0);
+        transition: all 0.5s;
+    }
+
+    .common-dropdown-nav {
+        display: block;
+    }
+
+    .common-nav-links-menu {
+        text-decoration: none;
+    }
+
+    .common-dropdown-nav .common-nav-links-menu-profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 10px;
+        width: 100%;
+        font-weight: normal;
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .common-nav-links-menu-profile img {
+        border-radius: 50%;
+        width: 15%;
+    }
+}

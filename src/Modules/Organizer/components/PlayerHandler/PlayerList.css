@@ -1,0 +1,291 @@
+.Player-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-color {
+    color: white;
+    margin-left: 10px;
+}
+
+.Player-container .Player-ctrls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 100%;
+    column-gap: 20px;
+    /* border: 1px solid black; */
+}
+
+.search-section {
+    display: flex;
+    column-gap: 10px;
+    margin-top: -47px;
+    width: 40%;
+}
+
+.search-section input {
+    width: 20rem;
+    height: 2rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-section button {
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* .search-section button .search-icon{
+    margin-top: 10px;
+}  */
+
+.Player-ctrls .Player-attach-bulk button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 2rem;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+.Player-attach-bulk button:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+.Player-ctrls .Player-Upload-Histroy button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.Player-Upload-Histroy button:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+.Player-ctrls .Player-attach button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 2rem;
+    background-color: black;
+}
+
+.Player-attach a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.Player-attach button:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+.Player-ctrls .addPlayer button {
+    font-size: 1.9em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Player-ctrls .addPlayer button :hover {
+    color: rgb(255, 196, 0);
+}
+
+.editbutton {
+    font-size: 25px;
+    color: black;
+}
+
+.editbutton :hover {
+    opacity: 0.7;
+    color: rgb(255, 196, 0);
+}
+
+.PlayerDetails {
+    height: 90vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    padding: 10px;
+}
+
+.PlayerDetails::-webkit-scrollbar {
+    width: 0;
+}
+
+.PlayerDetails table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+.PlayerDetails th,
+.PlayerDetails td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.PlayerDetails tr:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.PlayerDetails th {
+    background-color: rgb(255, 196, 0);
+}
+
+.PlayerDetails td img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.Dialog .Dialog-file-button {
+    padding: 5px;
+    width: 5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.Dialog .Dialog-file-button:hover {
+    border: 1px solid rgb(255, 196, 0);
+    color: rgb(255, 196, 0);
+}
+
+.Dialog .Dialog-upload-button {
+    padding: 10px;
+    width: 5rem;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: no-drop;
+    margin-right: 10px;
+}
+
+.Dialog .Dialog-button-visible {
+    padding: 10px;
+    width: 5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Dialog .Dialog-button-visible:hover {
+    border: 1px solid rgb(255, 196, 0);
+    color: rgb(255, 196, 0);
+}
+
+.Dialog .Dialog-cancel-button {
+    padding: 10px;
+    width: 5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Dialog .Dialog-cancel-button:hover {
+    border: 1px solid rgb(255, 196, 0);
+    color: rgb(255, 196, 0);
+}
+
+@media(max-width: 500px) {
+    .PlayerDetails {
+        padding: 0px;
+    }
+
+    .PlayerDetails th,
+    .PlayerDetails td {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .Player-container .Player-ctrls {
+        column-gap: 5px;
+    }
+
+    .search-section input {
+        width: 10rem;
+    }
+
+    .Player-ctrls .Player-attach-bulk button {
+        padding: 5px;
+        height: 1.7rem;
+        font-size: 8px;
+        width: 60px;
+    }
+
+    .Player-ctrls .Player-Upload-Histroy button {
+        padding: 5px;
+        height: 1.7rem;
+        font-size: 8px;
+        width: 60px;
+    }
+
+    .Player-ctrls .Player-attach button {
+        padding: 5px;
+        height: 1.7rem;
+        font-size: 7px;
+        width: 60px;
+    }
+}
+
+@media(max-width: 768px) {
+    .search-section {
+        margin-top: 0px;
+        justify-content: flex-end;
+        margin-right: 10px;
+        width: 97%;
+    }
+
+    .search-section input {
+        width: 13rem;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+    .search-section {
+        margin-top: -47px;
+        margin-right: 25rem;
+        width: 50%;
+    }
+
+    .search-section input {
+        width: 15rem;
+    }
+}

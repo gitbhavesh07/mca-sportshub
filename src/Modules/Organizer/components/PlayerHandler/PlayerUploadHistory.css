@@ -1,0 +1,219 @@
+.PlayerUploadHistory {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .PlayerUploadHistory h2 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+   .PlayerUploadHistory table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  .PlayerUploadHistory{
+    height: 80vh;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+  .PlayerUploadHistory::-webkit-scrollbar {
+    width: 0;
+}
+  .PlayerUploadHistory table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white; 
+  
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .PlayerUploadHistory th {
+    background-color: #ffc400;
+    color: black;
+    padding: 12px; 
+    font-size: 18px; 
+  }
+  
+  .PlayerUploadHistory td {
+    padding: 10px; 
+    font-size: 18px; 
+    font-weight: bold;
+    border-bottom: 1px solid #ddd; 
+    text-align:center;
+    width:20%;
+  }
+  .PlayerUploadHistory .filename-cell{
+    text-align: left;
+    padding-left: 30%;
+  }
+  .PlayerUploadHistory .filestatus{
+    text-align: left;
+    padding-left: 6%;
+  }
+  .PlayerUploadHistory .download-button {
+    padding:5px; 
+    width: 40px;
+    background-color: black;
+    color: rgb(255, 196, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    font-size: 18px; 
+  }
+  .PlayerUploadHistory .download-button a{
+    text-decoration: none;
+    color:rgb(255, 196, 0);
+  }
+  .PlayerUploadHistory .download-button:hover {
+    background-color: rgb(255, 196, 0);
+    color: black;
+  }
+  .PlayerUploadHistory .download-button:hover a{
+    background-color: rgb(255, 196, 0);
+    color: black;
+  }
+  .PlayerUploadHistory .download-button:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: rgba(221, 221, 221, 0.705);
+}
+.PlayerUploadHistory .download-button:disabled a{
+  text-decoration: none;
+  color: rgba(221, 221, 221, 0.705);
+}
+  .filestatus-icon {
+    font-size: 28px;
+    padding-right: 7px;
+    vertical-align: middle;
+  }
+  
+  .download-icon {
+    font-size: 20px;
+  }
+  
+  .success-icon {
+    color: rgb(45, 182, 45);
+  }
+  
+  .failed-icon {
+    color: rgb(255, 51, 0);
+  }
+  .error-icon {
+    color: rgb(255, 174, 0);
+  }
+
+  .success-text {
+    color: rgb(25, 146, 25);
+    text-align: left;
+  }
+  
+  .failed-text {
+    color: rgb(255, 51, 0);
+    text-align: left;
+  }
+  .error-text {
+    color: rgb(255, 174, 0);
+    text-align: left;
+  }
+  .loadbar {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+  .sort-arrow{
+    font-size:25px;
+    vertical-align:middle;
+  }
+  .pagination {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+  }
+  
+  .pagination-button {
+    margin: 3px;
+    padding:1px;
+    background-color: black;
+    color: rgb(255, 196, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    font-size: 10px;
+  }
+  
+  .pagination-button:hover {
+    background-color: rgb(255, 196, 0);
+    color: black;
+  }
+  
+  .pagination-button:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: rgba(221, 221, 221, 0.705);
+  }
+  
+  .pagination-info {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .pagination-icon {
+    font-size: 35px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (max-width:1097px){
+    .filestatus-icon {
+    margin-left:0px;
+    padding-left:0px;
+    border-left:none;
+  }
+  }
+  @media(max-width:1023px){
+    .PlayerUploadHistory th {
+        font-size: 15px; 
+      }
+    .PlayerUploadHistory td {
+        /* padding: 10px;  */
+        font-size: 15px; 
+      }
+      .filestatus-icon {
+        font-size: 23px;
+      }
+  }
+  @media(max-width:374px){
+    .download-icon {
+        font-size: 13px;
+      }
+      .PlayerUploadHistory th {
+        font-size: 12px; 
+      }
+    .PlayerUploadHistory td {
+        font-size: 12px; 
+      }
+      .PlayerUploadHistory button {
+        width: 30px;
+      }
+      /* .PlayerUploadHistory table {
+        margin-right: 30%;
+      } */
+      
+  }
+  

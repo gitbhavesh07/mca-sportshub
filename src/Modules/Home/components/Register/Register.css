@@ -1,0 +1,143 @@
+.reg-container {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-form {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  width: 70%;
+  max-width: 400px;
+}
+
+.reg-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.form-control:focus {
+  border-color: rgb(255, 183, 0);
+  outline: none;
+}
+
+.username-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.username-box {
+  visibility: hidden;
+}
+
+.password-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.password-box {
+  visibility: hidden;
+}
+
+.email-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.email-box {
+  visibility: hidden;
+}
+
+.phone-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.phone-box {
+  visibility: hidden;
+}
+
+.password-toggle {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.password-icon{
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+
+.password-icon button{
+  position: absolute;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 4px;
+  background-color: black;
+  width: 40px;
+  height: 33px;
+}
+
+.password-icon button .icon{
+  margin-top: 5px;
+}
+
+.resend{
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 183, 0);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  border: 1px solid black;
+  background-color: black;
+  color: rgb(255, 183, 0);
+}
+
+.reg-form-label{
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  font-weight:bold;
+}
+@media (max-width: 767px) {
+  .reg-form {
+    padding: 20px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .reg-form {
+    padding: 30px;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reg-form {
+    padding: 50px;
+    width: 50%;
+  }
+}

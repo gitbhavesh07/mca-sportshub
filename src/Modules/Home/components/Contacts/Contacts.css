@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:wght@300&family=Graduate&family=Orbitron:wght@500&family=Roboto+Mono:ital@1&display=swap');
+
+.contacts-container {
+    width: 100%;
+    padding: 50px;
+}
+
+.contacts-head {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.underline {
+    border: 1px solid rgb(255, 196, 0);
+    background-color: rgb(255, 196, 0);
+    height: 3px;
+    width: 10%;
+}
+
+.contacts-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin-left: 10%;
+}
+
+.phone-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-details h1 {
+    font-size: 15px;
+    color: gray;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.one-no {
+    font-size: 12px;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.one-no:hover {
+    color: cyan;
+    transition: 0.5s all ease-out;
+}
+
+.sec-no {
+    font-size: 12px;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.sec-no:hover {
+    color: cyan;
+    transition: 0.5s all ease-out;
+}
+
+.separator {
+    border-right: 1px solid gray;
+    width: 5px;
+    margin-left: 50%;
+}
+
+.email-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-details h1 {
+    font-size: 15px;
+    color: gray;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.email-details p {
+    font-size: 12px;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.email-details p:hover {
+    color: cyan;
+    transition: 0.5s all ease-out;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input {
+    border: 1px solid gray;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.contact-form-3ip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.contact-form-3ip .name-input,.email-input,.phone-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-input input{
+    width: 100%;
+}
+
+.email-input input{
+    width: 100%;
+}
+
+.phone-input input{
+    width: 100%;
+}
+
+.contact-form-1ip .Contactcaptcha-box.success {
+    border-color: rgb(127, 255, 127);
+}
+
+.contact-form-3ip .name-box-visible {
+    visibility: visible;
+    color: rgb(252, 78, 78);
+}
+
+.contact-form-3ip .name-box{
+    visibility: hidden;
+}
+
+.contact-form-3ip .email-box-visible {
+    visibility: visible;
+    color: rgb(252, 78, 78);
+}
+
+.contact-form-3ip .email-box {
+    visibility: hidden;
+}
+
+.contact-form-3ip .phone-box-visible {
+        visibility: visible;
+        color: rgb(252, 78, 78);
+}
+
+.contact-form-3ip .phone-box {
+    visibility: hidden;
+}
+
+.contact-form-1ip .Contactcaptcha-box.error {
+    border-color: rgb(252, 78, 78);
+}
+
+.message-box-visible {
+    visibility: visible;
+    color: rgb(252, 78, 78);
+}
+
+.message-box {
+    visibility: hidden;
+}
+
+.contact-form-1ip {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-form-1ip p {
+    font-size: 13px;
+    font-family: "Maven Pro", verdana, sans-serif;
+}
+
+.contact-form-1ip .captcha {
+    margin-left: 250px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(135, 135, 135);
+}
+
+.contact-form-1ip img {
+    width: 150px;
+}
+
+.captcha {
+    position: absolute;
+}
+
+.contact-form-1ip p a {
+    text-decoration: none;
+    color: #51d8af;
+    cursor: pointer;
+}
+
+.contact-form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-send {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 196, 0);
+    font-size: 15px;
+    font-family: "Maven Pro", verdana, sans-serif;
+    cursor: pointer;
+}
+
+.contact-form-send:hover {
+    color: rgb(255, 196, 0);
+    background-color: black;
+}
+
+.status.hidden {
+    display: block;
+    width: 50%;
+    font-size: 15px;
+}
+
+.status.success {
+    display: block;
+    width: 50%;
+    font-size: 15px;
+    color: green;
+}
+
+.status.error {
+    display: block;
+    width: 50%;
+    font-size: 15px;
+    color: red;
+}
+
+@media (max-width: 767px) {
+    .contacts-container {
+        padding: 20px;
+    }
+
+    .contacts-head {
+        font-size: 15px;
+    }
+
+    .underline {
+        width: 30%;
+    }
+
+    .contacts-details {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-form-3ip {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .contact-form-1ip {
+        flex-direction: column;
+    }
+
+    .contact-form-1ip .captcha {
+        margin-left: 0px;
+        margin-top: 70px;
+    }
+
+    .status {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contacts-container {
+        padding: 25px;
+    }
+
+    .underline {
+        width: 8%;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .contacts-details {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .contact-form-1ip .captcha {
+        margin-left: 240px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contacts-container {
+        padding: 50px;
+    }
+
+    .underline {
+        width: 5%;
+    }
+}

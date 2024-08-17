@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:wght@300&family=Graduate&family=Orbitron:wght@500&family=Roboto+Mono:ital@1&display=swap');
+
+.about-container {
+  width: 100%;
+  padding: 50px;
+  background-color: black;
+}
+
+.about-head {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.about-underline {
+  border: 1px solid rgb(255, 196, 0);
+  background-color: rgb(255, 196, 0);
+  height: 3px;
+  width: 25%;
+}
+
+.about-container p {
+  margin-top: 15px;
+  color: white;
+  font-family: "Maven Pro", verdana, sans-serif;
+  font-size: 13px;
+  word-spacing: 3px;
+}
+
+@media (max-width: 767px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-head {
+    font-size: 15px;
+  }
+
+  .about-underline {
+    width: 80%;
+  }
+
+  .about-container p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-container {
+    padding: 40px;
+  }
+
+  .about-head {
+    font-size: 28px;
+  }
+
+  .about-underline {
+    width: 40%;
+  }
+
+  .about-container p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    padding: 50px;
+  }
+
+  .about-head {
+    font-size: 32px;
+  }
+
+  .about-underline {
+    width: 25%;
+  }
+
+  .about-container p {
+    font-size: 14px;
+  }
+}

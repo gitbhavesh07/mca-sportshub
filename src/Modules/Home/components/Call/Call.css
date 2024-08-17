@@ -1,0 +1,88 @@
+.call-container {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 196, 0);
+}
+  
+.call-msg{
+  margin-left: 15px;
+}
+
+.call-msg h2,
+.call-msg h4 {
+  padding: 5px;
+  margin: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.call-button {
+  padding: 5px;
+  margin: 25px;
+}
+  
+.call-button button {
+  height: 60px;
+  width: 250px;
+  background-color: white;
+  border: none;
+}
+
+.call-button button:hover {
+  background-color: black;
+  color: white;
+}
+  
+.call-button span {
+  font-size: 20px;
+  padding: 5px;
+}
+  
+@media (max-width: 767px) {
+  .call-container {
+    padding: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .call-msg h2,
+  .call-msg h4 {
+    font-size: 18px;
+  }
+  
+  .call-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .call-button button {
+    height: 35px;
+    width: 120px;
+  }
+  
+  .call-button span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .call-msg h2,
+  .call-msg h4 {
+    font-size: 22px;
+  }
+  
+  .call-button button {
+    height: 45px;
+    width: 170px;
+  }
+  
+  .call-button span {
+    font-size: 18px;
+  }
+}
+  

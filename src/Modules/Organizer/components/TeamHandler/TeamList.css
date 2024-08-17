@@ -1,0 +1,82 @@
+.Team-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Team-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+}
+
+.Team-container button {
+    font-size: 1.9em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Team-add button :hover {
+    opacity: 0.7;
+    color: rgb(255, 196, 0);
+}
+
+.editbutton {
+    font-size: 25px;
+    color: black;
+}
+
+.editbutton :hover {
+    opacity: 0.7;
+    color: rgb(255, 196, 0);
+}
+
+.TeamDetails {
+    height: 90vh;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    padding: 10px;
+}
+
+.TeamDetails::-webkit-scrollbar {
+    width: 0;
+}
+
+.TeamDetails table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+.TeamDetails th,
+.TeamDetails td {
+    border: 1px solid #ccc;
+    padding: 13px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.TeamDetails tr:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.TeamDetails th {
+    background-color: rgb(255, 196, 0);
+}
+
+@media(max-width: 500px) {
+    .TeamDetails {
+        padding: 0px;
+    }
+
+    .TeamDetails th,
+    .TeamDetails td {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+}

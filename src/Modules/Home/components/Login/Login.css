@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap');
+
+.login-container {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    width: 50%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .login-form-group {
+    margin-bottom: 25px;
+} */
+
+.login-form-captcha {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.login-captcha {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form-captcha img {
+    width: 100px;
+    height: 32px;
+}
+
+.invalid-feedback{
+    color: red;
+}
+
+.login-form-captcha .captcha {
+    margin-left: 145px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(135, 135, 135);
+}
+
+.login-form-captcha .reload {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.login-form-captcha .reload:hover {
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: white;
+    color: black;
+}
+
+.login-form-fpassword {
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.login-form-fpassword a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login-form-fpassword a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.captcha-box-visible {
+    visibility: visible;
+    color: rgb(252, 78, 78);
+}
+  
+.captcha-box {
+    visibility: hidden;
+}
+
+.login-form-label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.login-form-group .password{
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.password button{
+    position: absolute;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 4px;
+    background-color: black;
+    width: 40px;
+    height: 33px;
+}
+
+.password button .icon{
+    margin-top: 5px;
+}
+
+.resend{
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .login-form {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .login-form-fpassword a {
+        font-size: 10px;
+    }
+
+    .login-form-fpassword p {
+        font-size: 10px;
+    }
+
+    .login-form-label {
+        font-size: 10px;
+    }
+
+    .login-form-captcha {
+        row-gap: 10px;
+    }
+
+    .login-captcha {
+        width: 100%;
+    }
+
+    .login-form-captcha img {
+        width: 90px;
+        height: 32px;
+    }
+
+    .login-form-captcha .captcha {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .login-form {
+        padding: 30px;
+        width: 60%;
+    }
+
+    .login-form-captcha {
+        row-gap: 10px;
+    }
+
+    .login-captcha {
+        width: 100%;
+    }
+
+    .login-form-captcha img {
+        width: 90px;
+        height: 32px;
+    }
+
+    .login-form-captcha .captcha {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-form {
+        padding: 50px;
+        width: 50%;
+    }
+    .login-form-captcha {
+        row-gap: 10px;
+    }
+
+    .login-captcha {
+        width: 100%;
+    }
+
+    .login-form-captcha img {
+        width: 90px;
+        height: 32px;
+    }
+
+    .login-form-captcha .captcha {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+}

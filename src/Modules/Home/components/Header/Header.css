@@ -1,0 +1,218 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+}
+.auction-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+}
+.navbar {
+    background: black;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.active {
+    background-color: rgb(255, 196, 0);
+    border-radius: 4px;
+}
+
+.nav-links:not(.active):hover {
+    color: rgb(255, 196, 0);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.nav-links-button button:hover {
+    background-color: white;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+}
+
+.btn:hover {
+    transition: all 0.3s ease-out;
+    color: rgb(255, 196, 0);
+    border-radius: 4px;
+    background-color: white;
+}
+
+.bar-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 0;
+    top: 90px;
+    width: 185px;
+    background: rgba(16, 17, 16, 0.6);
+    overflow: hidden;
+
+}
+
+.dropdown-nav.open {
+    display: none;
+    height: max-content;
+}
+
+.dropdown-nav li {
+    list-style: none;
+    display: flex;
+    padding: 12px;
+    color: white;
+    align-items: flex-start;
+    cursor: pointer;
+
+}
+
+.close {
+    display: none;
+}
+
+.nav-links-menu {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links-button-menu {
+    text-decoration: none;
+    color: black;
+}
+.back-page button{
+     background-color: white;
+     color: black;
+     font-size: 23px;
+     border-radius:100px;
+     padding: 5px;
+     height: 35px;
+}
+.back-page{
+    padding: 5px;
+}
+@media (max-width:1438px) and (min-width:1024px){
+    .back-page{
+        position:absolute;
+        left:10px;
+    }
+    .auction-logo{
+        position: absolute;
+        left:50px;
+        top: 0.5px;
+        margin-right: 90%;
+    }
+    .auctionhead-container .nav-menu {
+        width: 95vw;
+    }
+}
+@media(max-width: 992px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .bar-icon {
+        position: absolute;
+        left: 92%;
+        display: block;
+
+    }
+
+    .dropdown-nav.open {
+        display: block;
+    }
+
+    .dropdown-nav.open li:hover {
+        color: rgb(255, 196, 0);
+        transition: all 0.5s;
+    }
+
+    .dropdown-nav {
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        left:30px;
+        top: 0.5px;
+    }
+    .auction-logo{
+        position: absolute;
+        left:50px;
+        top: 0.5px;
+    }
+    .back-page{
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+}

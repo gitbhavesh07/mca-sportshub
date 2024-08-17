@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Today Auctions",
+        "path": "#todayAuctions",
+        "cName": "submenu-Item"
+    },
+    {
+        "title": "Upcoming Auctions",
+        "path": "#upcomingAuctions",
+        "cName": "submenu-Item"
+    },
+    {
+        "title": "Clients",
+        "path": "#clients",
+        "cName": "submenu-Item"
+    },
+    {
+        "title": "Pricing",
+        "path": "#pricing",
+        "cName": "submenu-Item"
+    },
+    {
+        "title": "Contacts",
+        "path": "#contacts",
+        "cName": "submenu-Item"
+    }
+]

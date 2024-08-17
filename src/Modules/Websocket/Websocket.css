@@ -1,0 +1,239 @@
+.live-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    /* position: absolute; */
+}
+
+.live-logo {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+.live-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    font-family: 'Cinzel', serif;
+    column-gap: 10rem;
+}
+
+.live-player {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 20px;
+    width: max-content;
+}
+
+.live-player img {
+    width: 300px;
+    height: 250px;
+}
+
+.live-PlayerStatus {
+    border: 1px solid gray;
+    position: absolute;
+    width: 18.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(35, 170, 37);
+    margin-top: 12rem;
+    font-size: 25px;
+}
+
+.live-PlayerStatus.unsold {
+    background-color: rgb(231, 45, 45);
+}
+
+.live-playerContent {
+    padding: 20px;
+    line-height: 30px;
+}
+
+.live-default-image {
+    width: 100%;
+    height: 50%;
+}
+
+.live-team {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 10px 20px;
+    column-gap: 50px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-y: auto;
+
+}
+
+.live-team .live-team-box {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    column-gap: 5px;
+    width: 15rem;
+}
+
+.live-team .live-team-box.selected {
+    background-color: rgb(255, 183, 0);
+    color: white;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.live-team-box img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.live-team-box-content {
+    padding: 10px;
+    width: 70%;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 23px;
+    margin-bottom: 15px;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.point-value {
+    /* border: 2px solid black; */
+    padding: 3px;
+    margin: 5px;
+    /* border: 1px solid black; */
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+    color: white;
+}
+
+@media (max-width:767px) and (min-width: 320px) {
+    .live-content {
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .live-player-container {
+        padding: 10px;
+    }
+
+    .live-player {
+        flex-direction: row;
+        width: 100%;
+        height: 12.6rem;
+    }
+
+    .live-default-image {
+        width: 50%;
+    }
+
+    .live-player img {
+        /* width: 200px; */
+        width: 48vw;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+    .live-playerContent {
+        line-height: 30px;
+    }
+
+    .live-PlayerStatus {
+        /* width: 11.5rem; */
+        width: 48%;
+        margin-top: 8.5rem;
+        position: absolute;
+    }
+
+    .live-team{
+        justify-content: center;
+    }
+}
+
+@media (max-width:1023px) and (min-width: 768px) {
+    .live-content {
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .live-player-container {
+        padding: 10px;
+    }
+
+    .live-player {
+        flex-direction: row;
+        width: 80%;
+        height: 12.6rem;
+        margin-left: 50px;
+    }
+
+    .live-default-image {
+        width: 50%;
+    }
+
+    .live-player img {
+        /* width: 200px; */
+        width: 35vw;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+    .live-playerContent {
+        line-height: 30px;
+    }
+
+    .live-PlayerStatus {
+        /* width: 11.5rem; */
+        width: 35%;
+        margin-top: 8.5rem;
+        position: absolute;
+    }
+    .live-team{
+        justify-content: center;
+    }
+
+    .live-team-box img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .live-team .live-team-box {
+        width: 11rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width:1024px){    
+    .live-team .live-team-box {
+        width: 12rem;
+    }
+    
+    .live-team-box img {
+        width: 5rem;
+        height: 5rem;
+    }
+}

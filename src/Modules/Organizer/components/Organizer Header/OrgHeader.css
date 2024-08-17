@@ -1,0 +1,136 @@
+.org-container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 300px;
+    transition: all 1ms;
+}
+
+.org-logo {
+    display: flex;
+    align-items: center;
+}
+
+.org-project-logo {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+.bars {
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.bars:hover {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    column-gap: 20px;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+
+.org-links-menu:hover {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu.active1 {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu.active2 {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu.active3 {
+    color: rgb(255, 196, 0);
+}
+
+.org-icon {
+    font-size: 25px;
+}
+
+/* close menu style */
+.sidebar-close {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 50px;
+    transition: all 0.5s;
+}
+
+.org-project-logo-close {
+    display: none;
+}
+
+.bars-close {
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 1.5rem;
+}
+
+.bars-close:hover {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu-close {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+
+.org-links-menu-close:hover {
+    color: rgb(255, 196, 0);
+}
+
+.org-link-close {
+    display: none;
+}
+
+.org-links-menu-close.active1 {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu-close.active2 {
+    color: rgb(255, 196, 0);
+}
+
+.org-links-menu-close.active3 {
+    color: rgb(255, 196, 0);
+}
+
+main {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-close {
+        display: none;
+    }
+}

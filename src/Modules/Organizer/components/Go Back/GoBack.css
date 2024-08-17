@@ -1,0 +1,21 @@
+.goback {
+    position: absolute;
+    padding: 10px;
+}
+
+.goback button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+.goback button:hover {
+    background-color: black;
+    color: rgb(255, 196, 0);
+}

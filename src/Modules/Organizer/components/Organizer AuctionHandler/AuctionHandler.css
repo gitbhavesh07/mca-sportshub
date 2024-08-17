@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap');
+
+.createAuction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createAuction-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 40px;
+  column-gap: 10px;
+
+}
+
+.createAuction-input1,
+.createAuction-input2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  padding: 20px;
+}
+
+
+.createAuction-input1 input,
+.createAuction-input2 input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.createAuction-input1 .org-select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.createAuction-addbutton {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.createAuction-addbutton button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.createAuction-addbutton button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.createAuction-input1 .upload-image {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 5px;
+  max-width: 130px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.createAuction-input1 .upload-image img {
+  border-radius: 6px;
+  cursor: pointer;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+}
+
+label {
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.photo-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.photo-box {
+  visibility: hidden;
+}
+
+.auctionname-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.auctionname-box {
+  visibility: hidden;
+}
+
+.auctiondate-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.auctiondate-box {
+  visibility: hidden;
+}
+
+.pointsperteam-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.pointsperteam-box {
+  visibility: hidden;
+}
+
+.minimumbid-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.minimumbid-box {
+  visibility: hidden;
+}
+
+.bidincreaseby-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.bidincreaseby-box {
+  visibility: hidden;
+}
+
+.playerperteam-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.playerperteam-box {
+  visibility: hidden;
+}
+
+.category-box-visible {
+  visibility: visible;
+  color: rgb(252, 78, 78);
+}
+
+.category-box {
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .createAuction-form {
+    flex-direction: column;
+  }
+
+  .createAuction-input1,
+  .createAuction-input2 {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .createAuction-input1,
+  .createAuction-input2 {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .createAuction-container {
+    height: 80%;
+  }
+}

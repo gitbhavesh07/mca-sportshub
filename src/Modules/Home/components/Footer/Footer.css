@@ -1,0 +1,23 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+}
+
+.facebook,
+.youtube,
+.instagram {
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.icon-underline {
+    background-color: rgb(255, 255, 255);
+    width: 1px;
+    height: 28px;
+}

@@ -1,0 +1,60 @@
+ .myauction-container{
+    display: flex;
+    flex-direction: column;
+ }
+
+.auction-add{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   padding: 20px;
+   width: 100%;
+}
+  
+ .auction-add button {
+    font-size: 1.9em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  } 
+  .auction-add button :hover {
+    opacity: 0.7;
+    color: rgb(255, 196, 0);
+  }
+.editbutton{
+  font-size:25px;
+  color: black;
+}
+.editbutton :hover{
+  opacity: 0.7;
+  color: rgb(255, 196, 0);
+}
+  .auctionDetails{
+    padding: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    height: 60vh;
+  }
+  .auctionDetails table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .auctionDetails th,
+  .auctionDetails td {
+    border: 1px solid #ccc;
+    padding: 13px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .auctionDetails tr:hover{
+    background-color: rgb(240, 240, 240);
+  }
+  .auctionDetails th {
+    background-color: rgb(255, 196, 0) ;
+  }
+ 
+  
+   
